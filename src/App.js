@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { HashRouter, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -24,7 +24,7 @@ function App() {
   },[])
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home name={userName}/>} />
         <Route path='/login' element={<Login/>} />
@@ -33,7 +33,7 @@ function App() {
         <Route path='/donor' element={<Donor/>} />
         <Route path='/acceptor' element={<Acceptor/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
