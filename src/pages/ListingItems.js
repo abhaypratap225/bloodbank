@@ -2,7 +2,7 @@ import React from "react";
 
 const ListingItems = ({ listing, id }) => {
   return (
-    <div className="col">
+    <div className="col ggbox">
     <div className="card" style={{ width: "18rem" }}>
       <div className="card-body p-0">
         <div className="bg-dark text-light p-3 crdhead" style={{width:'100%'}}>
@@ -21,7 +21,7 @@ const ListingItems = ({ listing, id }) => {
         <p className="card-text">
           Units of Blood : {listing.units}
         </p>
-        <button className="btn btn-dark justify-content-center d-flex container">Contact</button>
+        <a href={`mailto:${listing.email}?Subject=Need%20${listing.blood}%20blood%20urgently`}><button className="btn btn-dark justify-content-center d-flex container">Contact</button></a>
         </div>
       </div>
     </div>

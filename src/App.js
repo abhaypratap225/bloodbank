@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { HashRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -9,6 +8,8 @@ import { useEffect, useState } from 'react';
 import Donate from './pages/Donate';
 import Donor from './pages/Donor';
 import Acceptor from './pages/Acceptor';
+import About from './pages/About';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   },[])
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home name={userName}/>} />
         <Route path='/login' element={<Login/>} />
@@ -32,8 +33,10 @@ function App() {
         <Route path='/signup' element={<Signup/>} />
         <Route path='/donor' element={<Donor/>} />
         <Route path='/acceptor' element={<Acceptor/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/profile' element={<Profile/>} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

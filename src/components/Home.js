@@ -15,7 +15,7 @@ function Home(props) {
       <div className="hptitle">
         <h1 className="dabbatext">
           Welcome to <br />
-          Blood Bank Management System <br />
+          Online Blood Bank System<br />
           {props.name ? (
             <span className="usname">Hey,&nbsp;{props.name}</span>
           ) : (
@@ -53,8 +53,9 @@ function Home(props) {
               </p>
               <img
                 width="100%"
+                className="chhota"
                 style={{ border: "1px solid #000" }}
-                src="https://img.freepik.com/free-vector/realistic-world-blood-donor-day-illustration_52683-62566.jpg?w=2000"
+                src="https://media.istockphoto.com/id/1349428314/video/blood-donation-animation-video-illustration-4k-video.jpg?s=640x640&k=20&c=IKuxsLSfdQNP5q0c93o4_EjMVPEJc2lcAqpWHfsAIKw="
               ></img>
             </div>
             <div className="col-md-5 m-auto">
@@ -75,7 +76,7 @@ function Home(props) {
               <img
                 width="100%"
                 style={{ border: "1px solid #000" }}
-                src="https://img.freepik.com/free-vector/world-blood-donor-day-heart-blood-drop-with-heartbeat-line-concept-poster_1017-38605.jpg"
+                src="https://www.pr-medicalevents.com/wp-content/uploads/2016/06/post-img.jpg"
               ></img>
             </div>
           </div>
@@ -155,7 +156,7 @@ function Home(props) {
           If you are in need of Blood you can visit the 'Need Blood Page' to Request for the required Blood Group.
         </h6>
         <br/>
-        <button className="btn btn-light text-danger">Request Blood</button>
+        <a href="/acceptor"><button className="btn btn-light text-danger">Request Blood</button></a>
       </div>
 
       <Footer />

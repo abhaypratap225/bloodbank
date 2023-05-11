@@ -27,8 +27,9 @@
 }
 
 body{
-  background-color: #b03939 !important;
+  background:radial-gradient(#af4949 0%, #b03939 100%)  !important;
 }
+
 
 .dabba{
   background-color: white;
@@ -96,4 +97,23 @@ body{
 
 .tit{
   animation: moveup 1s ease-in-out;
+}
+
+.ggbox{
+  animation: moveup 1s ease-in-out;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.chhota{
+  height: 375px !important;
+  overflow: hidden;
+  object-fit: cover;
+  filter: grayscale(10%);
+}
+
+.pro{
+  border-radius: 57px;
 }

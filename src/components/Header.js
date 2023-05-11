@@ -37,7 +37,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg p-2 navdabba shadow">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            CCV Skill Based Project
+            Blood Bank Management
           </a>
           <button
             className="navbar-toggler"
@@ -69,20 +69,28 @@ const Header = () => {
                   Need Blood
                 </a>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/">
                   About
                 </a>
-              </li>
+              </li> */}
               
-              {user ? (
-                  <a
+              {user ? 
+              (
+                <>
+                <a className="nav-link" aria-current="page" href="/profile">
+                    Profile
+                  </a>
+                <a
                     className="nav-link "
                     onClick={logoutfunc}
                     style={{ cursor: "pointer" }}
                   >
-                    Logout
-                  </a>
+                      Logout
+                    </a>
+                </>
+
+
               ) : (
                   <a className="nav-link" href="/login">
                     Login
